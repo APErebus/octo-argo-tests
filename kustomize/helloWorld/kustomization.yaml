@@ -10,9 +10,10 @@ commonLabels:
 
 images:
 - name: monopole
-  newTag: 1
+  newTag: "1"
 
 resources:
 - deployment.yaml
 - service.yaml
+
 - configMap.yaml
