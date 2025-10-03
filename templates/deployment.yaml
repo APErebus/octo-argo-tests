@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argo-nginx
-  namespace: argo-nginx-#{Octopus.Environment.Slug}
+  namespace: argo-nginx-development
   labels:
     app: nginx
 spec:
-  replicas: #{ReplicaCount}
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
