@@ -5,9 +5,8 @@ metadata:
   namespace: argo-nginx
   labels:
     app: nginx
-    updated: "#{Updated}"
 spec:
-  replicas: #{ReplicaCount}
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -21,6 +20,7 @@ spec:
           image: nginx:1.20.0
           ports:
             - containerPort: 80
+
 
 
 
