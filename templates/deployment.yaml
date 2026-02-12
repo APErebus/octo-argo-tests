@@ -4,7 +4,8 @@ metadata:
   name: argo-nginx
   namespace: argo-nginx-#{Octopus.Environment.Slug}
   labels:
-    app: nginx
+    app: nginx    
+    updated: "#{Updated}"
 spec:
   replicas: #{ReplicaCount}
   selector:
@@ -20,3 +21,4 @@ spec:
           image: nginx:1.20.0
           ports:
             - containerPort: 80
+
