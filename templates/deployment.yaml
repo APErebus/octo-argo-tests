@@ -5,7 +5,7 @@ metadata:
   namespace: argo-nginx-development
   labels:
     app: nginx    
-    updated: "0.0.43"
+    updated: "0.0.48"
 spec:
   replicas: 3
   selector:
