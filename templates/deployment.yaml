@@ -4,7 +4,7 @@ metadata:
   name: argo-nginx
   labels:
     app: nginx    
-    updated: "0.0.59"
+    updated: "0.0.60"
 spec:
   replicas: 3
   selector:
